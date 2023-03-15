@@ -13,13 +13,19 @@
 
 <body>
     <div class="container-fluid d-flex justify-content-center">
-    <div class="card mt-3" style="width: 18rem;">
+    <div class="card mt-3" style="width: 20rem;">
         <img src="https://www.focus.it/images/2022/03/01/carrello-della-spesa_1020x680.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Lista della spesa</h5>
           <p class="card-text">
             <ol class="list-group list-group-numbered" id="shopping-list">
             </ol></p>
+            <div class="input-group mb-3">
+                <span class="input-group-text">Prodotto</span>
+                <input type="text" class="form-control" id="product" aria-describedby="inputGroup-sizing-default">
+                <button type="button" id="add-product" class="btn btn-success">Aggiungi</button>
+
+              </div>
         </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 const shoppingBox = document.getElementById("shopping-list")
-const shoppingList = ["manzo", "salmone", "arachidi", "pollo"]
+const shoppingList = ["pasta", "uova", "gelato al limone", "tiramisù", "peperoni"]
+const addProduct = document.getElementById("add-product");
+
 
 function scriviLista() {
     let counter = 0; //contatore
@@ -10,3 +12,9 @@ function scriviLista() {
 }
 
 scriviLista();
+const product = document.getElementById("product");
+addProduct.addEventListener("click", function (){
+shoppingList.push(product.value);//pusha valore input product nell'array
+shoppingBox.innerHTML = "";//cancella la lista
+scriviLista();//riscrivila col nuovo array
+})
